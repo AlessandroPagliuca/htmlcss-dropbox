@@ -104,8 +104,9 @@ img{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
+
 .text-grey{
     color: var(--color-grey);
 }
@@ -159,8 +160,9 @@ main{
 }
 .m-l-r-box-plan{
     margin: 0px 15px;
-
-
+}
+.m-top{
+    margin-top: 30px;
 }
 .box-plan{
     border: 1px solid var(--border-bot);
