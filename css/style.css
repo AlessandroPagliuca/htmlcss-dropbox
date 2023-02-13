@@ -33,11 +33,14 @@ ul{
 a{
     text-decoration: none;
 }
+h1{
+    font-size: 5vw;
+}
 /* /General */
 
 /* Utility */
 .container{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
 }
@@ -52,6 +55,18 @@ a{
     justify-content: space-between;
     align-items: flex-start;
 }
+.wrap{
+    flex-wrap: wrap;
+}
+.p-40{
+    padding-right: 40px;
+}
+.p-top-25{
+    padding-top: 25px;
+}
+img{
+    width: 100%;
+}
 /* /Utility */
 
 /* header */
@@ -62,15 +77,44 @@ header{
     top:0;
     z-index: 1000;
     background-color: var(--bg-primay);
+
+}
+header a{
+    color: var(--color-text);
 }
 .debug{
     border: 1px solid black;
 }
-.p-40{
-    padding-right: 40px;
-}
+
 #hero{
     width: 100%;
     background-color: var(--bg-lightblue);
 }
+.img-client{
+    width: 200vw;
+    position: relative;
+    margin-bottom: -80px;
+}
+.align-content{
+    align-content: center;
+}
 /* /header */
+
+/* main */
+main{
+    padding-top: 80px;
+}
+
+/* /main */
+
+/* footer */
+footer{
+    background-color: var(--footer);
+    color: var(--color-text-footer);
+    padding-top: 50px;
+}
+footer a{
+    color: var(--color-text-footer);
+}
+
+/* /footer */
