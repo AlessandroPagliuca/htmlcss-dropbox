@@ -120,6 +120,9 @@ p{
 .m-top-40{
     margin-top: 40px;
 }
+.m-top-60{
+    margin-top: 100px;
+}
 img{
     display: block;
 }
@@ -176,11 +179,11 @@ main{
     padding-top: 80px;
 }
 .plan{
-    width: calc((100% / 3) - 10px);
+    width: calc((100% / 3) - 20px);
     font-size: 1rem;
 }
 .m-l-r-box-plan{
-    margin: 0px 10px;
+    margin: 0px 20px;
 }
 .m-top{
     margin-top: 30px;
@@ -292,6 +295,18 @@ main{
     color: var(--color-text);
     padding: 8px;
 }
+/* Section more operations with Dropbox Business*/
+.card{
+    padding-top:30px;
+}
+.card img{
+    width: 100%;
+}
+.card p{
+    font-size: .8rem;
+}
+/* Section more operations with Dropbox Business*/
+
 /* /main */
 
 /* footer */
