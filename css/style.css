@@ -81,8 +81,20 @@ p{
 .wrap{
     flex-wrap: wrap;
 }
+.p-all-10{
+    padding: 10px;
+}
 .p-all-15{
     padding: 15px;
+}
+.p-left-15{
+    padding-left: 15px;
+}
+.p-left-25{
+    padding-left: 25px;
+}
+.p-right-25{
+    margin-right: 25px;
 }
 .p-40{
     padding-right: 40px;
@@ -104,6 +116,9 @@ p{
 }
 .p-bot-30{
  padding-bottom: 30px;
+}
+.m-top-40{
+    margin-top: 40px;
 }
 img{
     display: block;
@@ -176,8 +191,8 @@ main{
 .box-plan{
     border: 1px solid var(--border-bot);
 }
-.box-plan li{
-    padding: 10px 25px;
+.box-plan-p li{
+    padding: 15px 40px;
 
 }
 .a-underline{
@@ -220,7 +235,7 @@ main{
     text-align: center;
 }
 .box-55-plan{
-    padding: 25px 25px;
+    padding: 40px 25px;
     width: 72%;
 }
 .line-grey{
@@ -229,6 +244,41 @@ main{
     border-bottom: 1px solid var(--border-bot);
 }
 .icon-blue{
+    color: var(--btn);
+}
+.box-img-plan img{
+    width: 60%;
+}
+.box-text-plan{
+    width: 40%;
+}
+
+.list-icon{
+    text-indent: -1.5rem;
+    padding-left: 1.2rem;
+}
+.list-icon::before{
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    margin-right:5px;
+}
+.list-icon.share::before{
+    content: "\f1e0";
+}
+.list-icon.user::before{
+    content: "\f007";
+}
+.list-icon.folder::before{
+    content: "\f07b";
+}
+.list-icon.group::before{
+    content: "\e533";
+}
+.list-icon.agency::before{
+    content: "\f1ad";
+}
+.list-icon.check::before{
+    content: "\f00c";
     color: var(--btn);
 }
 /* /main */
