@@ -148,6 +148,9 @@ p{
 .m-top-60{
     margin-top: 100px;
 }
+.m-50-0-30-0{
+    margin: 50px 0 30px 0;
+}
 
 img{
     display: block;
@@ -448,6 +451,27 @@ details{
     background-color: var(--box-designit);
     cursor: pointer;
  }
+ details[open] summary ~ * {
+    animation: sweep .7s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {
+        opacity: 0; 
+        margin-top: -10px;
+    }
+    10%{
+        opacity: 0.25;
+        margin-top: -8px;
+    }
+    25%{
+        opacity:0.5;
+        margin-top: -5px;
+    }
+    100%  {
+        opacity: 1;
+        margin-top: 0px;
+    }
+  }
 /* /FAQ */
 /* /main */
 
@@ -465,5 +489,14 @@ footer a{
 footer li  {
     padding-top: 15px;
 }
+select{
+    background-color: var(--footer);
+    color: var(--border-bot);
+    border: var(--footer);
+    cursor: pointer;
 
+}
+.world{
+    color: var(--border-bot);
+}
 /* /footer */
