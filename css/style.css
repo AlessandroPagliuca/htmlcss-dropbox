@@ -331,11 +331,12 @@ main{
     height: calc(100% / 2);
 }
 .cubic-center{
+    background-color: var(--color-designit-grey);
  overflow: auto;
 }
 .cub-img{
     padding: 40px;
-    width: 300px;
+    width: 20vw;
 }
 .cub-img img{
     width: 100%;
@@ -346,6 +347,41 @@ main{
 .line-grey-cub{
     width: 100px;
     border-bottom: 1px solid var(--border-bot);
+}
+.cubic-in{
+    position: relative;
+}
+.cubic-in img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0) invert(1);
+}
+.bg-designit{
+    background-color: var(--box-design);
+}
+.bg-asu{
+    background-color: var(--box-arizona);
+}
+.bg-florida{
+    background-color: var(--box-florida);
+}
+.bg-topps{
+    background-color: var(--box-topps);
+}
+.bg-wbr{
+    background-color: var(--box-wbr);
+}
+.bg-hearts{
+    background-color: var(--box-hearts-corp);
+}
+.bg-lonely-p{
+    background-color: var(--box-lonely-planet);
+}
+.bg-channel{
+    background-color: var(--box-clear-channel);
 }
 /* /Section team using Dropbox Business */
 
