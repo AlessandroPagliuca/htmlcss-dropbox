@@ -27,6 +27,7 @@ html{
     --color-text-footer: #ffffff;
     --color-grey: #a8a9ad;
     --color-designit-grey: #f5f5f5;
+    --color-drop-agency: #61082b;
 
 }
 ul{
@@ -36,7 +37,7 @@ a{
     text-decoration: none;
 }
 h1{
-    font-size: 5vw;
+    font-size: 5rem;
 }
 label{
     font-size: .8rem;
@@ -85,6 +86,9 @@ p{
 .p-all-10{
     padding: 10px;
 }
+.p-all-100{
+    padding: 100px;
+}
 .p-all-15{
     padding: 15px;
 }
@@ -121,6 +125,9 @@ p{
 .p-bot-30{
  padding-bottom: 30px;
 }
+.p-bot-60{
+    padding-bottom: 60px;
+}
 .m-top-40{
     margin-top: 40px;
 }
@@ -134,6 +141,7 @@ p{
 .m-top-60{
     margin-top: 100px;
 }
+
 img{
     display: block;
 }
@@ -188,6 +196,7 @@ header a{
 /* main */
 main{
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 .plan{
     width: calc((100% / 3) - 20px);
@@ -362,6 +371,10 @@ main{
 .bg-designit{
     background-color: var(--box-design);
 }
+.bg-designit:hover{
+    box-shadow: inset 10px  10px var(--box-arizona);
+
+}
 .bg-asu{
     background-color: var(--box-arizona);
 }
@@ -385,6 +398,35 @@ main{
 }
 /* /Section team using Dropbox Business */
 
+/* Section your agency Dropbox Business */
+.bg-your-dropbox{
+    background-color: #b4d0e7;
+    color: var(--color-drop-agency);
+}
+.btn-ag-drop{
+    background-color: var(--bg-primay);
+    color: var(--color-text);
+    padding: 12px;
+}
+
+/* /Section your agency Dropbox Business */
+
+/* FAQ */
+.border-bot-faq{
+    border-bottom: 2px solid var(--border-bot);
+}
+details{
+    border-bottom: 2px solid var(--border-bot);
+}
+ summary{
+    font-weight: 700;
+    padding: 40px 5px;
+ }
+ details:hover{
+    background-color: var(--box-designit);
+    cursor: pointer;
+ }
+/* /FAQ */
 /* /main */
 
 /* footer */
@@ -392,9 +434,14 @@ footer{
     background-color: var(--footer);
     color: var(--color-text-footer);
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 footer a{
     color: var(--color-text-footer);
+    font-size: .8rem;   
+}
+footer li  {
+    padding-top: 15px;
 }
 
 /* /footer */
