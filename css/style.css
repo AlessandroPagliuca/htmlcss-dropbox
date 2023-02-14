@@ -39,6 +39,9 @@ a{
 h1{
     font-size: 5rem;
 }
+h2{
+    font-size: 2rem;
+}
 label{
     font-size: .8rem;
     padding-right: 40px;
@@ -86,8 +89,8 @@ p{
 .p-all-10{
     padding: 10px;
 }
-.p-all-100{
-    padding: 100px;
+.p-top-bot-100{
+    padding: 100px 0;
 }
 .p-all-15{
     padding: 15px;
@@ -177,9 +180,7 @@ header{
 header a{
     color: var(--color-text);
 }
-.debug{
-    border: 1px solid black;
-}
+
 
 #hero{
     width: 100%;
@@ -414,6 +415,7 @@ main{
 /* FAQ */
 .border-bot-faq{
     border-bottom: 2px solid var(--border-bot);
+    
 }
 details{
     border-bottom: 2px solid var(--border-bot);
