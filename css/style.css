@@ -42,6 +42,9 @@ label{
     padding-right: 40px;
 }
 
+p{
+    font-size: 1rem;
+}
 /* /General */
 
 /* Utility */
@@ -55,16 +58,18 @@ label{
     margin: 0 auto;
     padding: 15px;
 }
-.container-s-small{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 15px;
-}
+
 .d-flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.a-items-start{
     align-items: flex-start;
+
+}
+.a-items-end{
+    align-items: flex-end;
 }
 .d-flex-wrap{
     display: flex;
@@ -75,6 +80,9 @@ label{
 
 .wrap{
     flex-wrap: wrap;
+}
+.p-all-15{
+    padding: 15px;
 }
 .p-40{
     padding-right: 40px;
@@ -98,7 +106,7 @@ label{
  padding-bottom: 30px;
 }
 img{
-    width: 100%;
+    display: block;
 }
 .display-center{
     display: flex;
@@ -127,6 +135,7 @@ header{
     top:0;
     z-index: 1000;
     background-color: var(--bg-primay);
+    box-shadow: 0px 1px var(--border-bot);
 }
 header a{
     color: var(--color-text);
@@ -140,14 +149,11 @@ header a{
     background-color: var(--bg-lightblue);
     margin-bottom: 100px;
 }
-.img-client{
-    width: 200vw;
-    position: relative;
-    margin-bottom: -80px;
-}
+
 .align-content{
     align-content: center;
 }
+
 /* /header */
 
 /* main */
@@ -155,14 +161,17 @@ main{
     padding-top: 80px;
 }
 .plan{
-    width: calc((100% / 3) - 30px);
-    font-size: .8rem;
+    width: calc((100% / 3) - 10px);
+    font-size: 1rem;
 }
 .m-l-r-box-plan{
-    margin: 0px 15px;
+    margin: 0px 10px;
 }
 .m-top{
     margin-top: 30px;
+}
+.box-100-plan{
+    width: calc((100% / 1) - 10px) ;
 }
 .box-plan{
     border: 1px solid var(--border-bot);
@@ -178,11 +187,41 @@ main{
 .b-bottom{
     border-bottom: 1px solid var(--border-bot);
 }
+.box-hero-35{
+    width: 30%;
+}
+.box-hero-65{
+    width: 70%;
+}
+.box-hero-65 img{
+    width: 100%;
+    position: relative;
+    margin-bottom: -80px;
+}
+.btn-hero{
+    background-color: var(--btn);
+    padding: 10px;
+    display: inline-block;
+    color: var(--color-text-footer);
+}
+.font-hero-size{
+    font-size: 1rem;
+    
+}
+.arrow-hero{
+    font-size: 3rem;
+    color: var(--color-text);
+    padding: 20px 10px 10px 0px;
+}
 
 .btn-plan{
     padding: 10px;
     background-color: var(--btn);
     text-align: center;
+}
+.box-55-plan{
+    padding: 25px 25px;
+    width: 72%;
 }
 .line-grey{
     margin-left: 20px;
