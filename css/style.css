@@ -29,7 +29,14 @@ html{
     --color-designit-grey: #f5f5f5;
     --color-drop-agency: #61082b;
     --bg-v-btn: #297afe;
-
+    --shadow-designit: #bff9b7;
+    --shadow-arizona: #ad0e4c;
+    --shadow-florida: #00aef4;
+    --shadow-topps: #be2912;
+    --shadow-wbr: #a20017;
+    --shadow-hearts: #8ca2b3;
+    --shadow-lonely-planet: #07154d;
+    --shadow-clear-channel: #ccac26;
 }
 ul{
     list-style: none;
@@ -346,7 +353,7 @@ main{
     padding: 8px;
 }
 .btn-partner:hover{
-    background-color: var(--box-designit);
+    color: var(--color-grey);
 }
 /* Section more operations with Dropbox Business*/
 .card{
@@ -374,7 +381,7 @@ main{
 }
 .cubic-center{
     background-color: var(--color-designit-grey);
- overflow: auto;
+    overflow: auto;
 }
 .cub-img{
     padding: 40px;
@@ -405,29 +412,64 @@ main{
     background-color: var(--box-design);
 }
 .bg-designit:hover{
-    box-shadow: inset 10px  10px var(--box-arizona);
-
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-designit);
 }
+
 .bg-asu{
     background-color: var(--box-arizona);
 }
+.bg-asu:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-arizona);
+}
+
 .bg-florida{
     background-color: var(--box-florida);
 }
+.bg-florida:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-florida);
+}
+
 .bg-topps{
     background-color: var(--box-topps);
 }
+.bg-topps:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-topps);
+}
+
 .bg-wbr{
     background-color: var(--box-wbr);
 }
+.bg-wbr:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-wbr);
+}
+
 .bg-hearts{
     background-color: var(--box-hearts-corp);
 }
+.bg-hearts:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-hearts);
+}
+
 .bg-lonely-p{
     background-color: var(--box-lonely-planet);
 }
+.bg-lonely-p:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-lonely-planet);
+}
+
 .bg-channel{
     background-color: var(--box-clear-channel);
+}
+.bg-channel:hover{
+    box-shadow:inset 0 0 15px 15px ;
+    color: var(--shadow-clear-channel);
 }
 /* /Section team using Dropbox Business */
 
@@ -442,7 +484,7 @@ main{
     padding: 12px;
 }
 .btn-ag-drop:hover{
-    background-color: var(--box-designit);
+    color: var(--color-grey);
 }
 
 /* /Section your agency Dropbox Business */
@@ -458,6 +500,19 @@ details{
  summary{
     font-weight: 700;
     padding: 40px 5px;
+    display: block;
+ }
+ summary::after{
+    margin-left: 30px;
+    display: inline-block;
+    transition: 0.4s;
+    content: '\203A';
+ }
+ details[open] summary::after{
+    transform: rotate(90deg);
+ }
+ details p{
+    padding-bottom: 10px;
  }
  details:hover{
     background-color: var(--box-designit);
@@ -497,6 +552,9 @@ footer{
 footer a{
     color: var(--color-text-footer);
     font-size: .8rem;  
+}
+footer a:hover{
+    text-decoration: underline;
 }
 footer li  {
     padding-top: 15px;
