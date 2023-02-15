@@ -354,7 +354,7 @@ main{
 }
 .box-cub{
     width: calc(100% / 3);
-    height: 30vw;
+    height: calc(100vw / 3);
 }
 .cubic-in{
     width: calc(100% / 2);
