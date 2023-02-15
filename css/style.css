@@ -51,10 +51,49 @@ h2{
     font-size: 2rem;
 }
 label{
+    position: relative;
     font-size: .8rem;
+    padding-left: 30px;
     padding-right: 40px;
     cursor: pointer;
 }
+label input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--box-designit);
+    border-radius: 50%;
+}
+label:hover input ~ .checkmark {
+    background-color: var(--color-grey);
+  }
+label input:checked ~ .checkmark {
+    background-color: var(--bg-v-btn);
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+label input:checked ~ .checkmark:after {
+    display: block;
+  }
+label .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+  
 
 p{
     font-size: 1rem;
@@ -510,7 +549,7 @@ details{
     transform: rotate(270deg);
  }
  details p{
-    padding-bottom: 10px;
+    padding-bottom: 40px;
  }
  details:hover{
     background-color: var(--box-designit);
