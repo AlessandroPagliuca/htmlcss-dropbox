@@ -404,6 +404,9 @@ main{
 /* /Section more operations with Dropbox Business*/
 
 /* Section team using Dropbox Business */
+.cursor{
+    cursor: pointer;
+}
 .box-cub{
     width: calc(100% / 3);
     height: calc(100vw / 3);
